@@ -1,1 +1,321 @@
-# metacrown
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>META CROWN - AIRDROP & LISTING UPDATES</title>
+    <!-- Adstera Ads Script -->
+    <script type="text/javascript" src="https://ads.adstera.com/sdk/v2/adstera-ads.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            color: #fff;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 25px rgba(0, 153, 255, 0.3);
+            border: 1px solid #0099ff;
+        }
+        .ad-banner {
+            width: 100%;
+            margin: 20px 0;
+            text-align: center;
+            min-height: 90px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        h1 {
+            color: #00ccff;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px rgba(0, 204, 255, 0.5);
+        }
+        h2 {
+            color: #00ccff;
+            border-bottom: 2px solid #0099ff;
+            padding-bottom: 8px;
+            margin-top: 30px;
+        }
+        .announcement {
+            background: rgba(0, 153, 255, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #00ccff;
+            margin: 20px 0;
+            font-size: 1.1em;
+        }
+        .session-update {
+            background: rgba(255, 165, 0, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 5px solid #ffa500;
+            margin: 20px 0;
+        }
+        .highlight-box {
+            background: rgba(0, 255, 170, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px dashed #00ffaa;
+            margin: 20px 0;
+        }
+        .contract-address {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 8px 15px;
+            border-radius: 6px;
+            word-break: break-all;
+            color: #00ffaa;
+            font-size: 0.9em;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #0099ff, #00ccff);
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 50px;
+            margin: 15px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 153, 255, 0.4);
+        }
+        .btn:hover {
+            background: linear-gradient(90deg, #00ccff, #00ffaa);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 204, 255, 0.6);
+        }
+        .social-links {
+            margin: 30px 0;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #00ccff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 5px;
+            background: rgba(0, 153, 255, 0.2);
+            transition: all 0.3s;
+        }
+        .social-links a:hover {
+            background: rgba(0, 204, 255, 0.4);
+            color: #00ffaa;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #00ccff;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #0099ff;
+            border-radius: 6px;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1em;
+        }
+        .countdown {
+            font-size: 1.5em;
+            text-align: center;
+            margin: 20px 0;
+            color: #00ffaa;
+            font-weight: bold;
+        }
+        .warning {
+            color: #ff5555;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px 0;
+        }
+        .token-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .token-info div {
+            flex-basis: 48%;
+            margin-bottom: 10px;
+        }
+        .token-info span {
+            color: #00ffaa;
+            font-weight: bold;
+        }
+        .listing-coming {
+            text-align: center;
+            font-size: 1.2em;
+            color: #ffa500;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.8; }
+            50% { opacity: 1; text-shadow: 0 0 10px #ffa500; }
+            100% { opacity: 0.8; }
+        }
+        .sponsored-link {
+            text-align: center;
+            margin: 15px 0;
+            font-size: 0.9em;
+        }
+        .sponsored-link a {
+            color: #00ccff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Top Ad Banner -->
+        <div class="ad-banner">
+            <div id="adstera-top-banner"></div>
+        </div>
+        
+        <h1>META CROWN OFFICIAL UPDATES</h1>
+        
+        <div class="announcement">
+            <p><strong>🎉 FIRST ROUND AIRDROP DISTRIBUTION LIVE!</strong> Submit now to claim your CROWN tokens.</p>
+        </div>
+
+        <div class="session-update">
+            <p><strong>🔚 FIRST SESSION MINI GAME HAS ENDED</strong></p>
+            <p><strong>🔜 SECOND SESSION COMING SOON</strong> with listing updates!</p>
+        </div>
+
+        <div class="listing-coming">
+            🚀 LISTING ANNOUNCEMENT COMING SOON - STAY TUNED!
+        </div>
+
+        <!-- Middle Ad Banner -->
+        <div class="ad-banner">
+            <div id="adstera-middle-banner"></div>
+        </div>
+
+        <div class="countdown" id="countdown">
+            ⏰ LIMITED TIME CLAIM PERIOD - SUBMIT NOW!
+        </div>
+
+        <h2>CLAIM YOUR TOKENS</h2>
+        <form>
+            <div class="form-group">
+                <label for="telegram">Your Telegram Username (@username)</label>
+                <input type="text" id="telegram" placeholder="@YourUsername" required>
+            </div>
+            <div class="form-group">
+                <label for="wallet">Your BSC Wallet Address (BEP-20)</label>
+                <input type="text" id="wallet" placeholder="0x..." required>
+            </div>
+            <div class="form-group">
+                <label for="account">Meta Crown Mini Game Account Name</label>
+                <input type="text" id="account" placeholder="Your Game Name" required>
+            </div>
+            <button type="submit" class="btn">SUBMIT & CLAIM AIRDROP</button>
+        </form>
+
+        <div class="sponsored-link">
+            Sponsored: <a href="https://www.profitableratecpm.com/pd479ti78?key=27347357875ed4e5d72963cd8aac9321" target="_blank">Earn with Crypto Ads</a>
+        </div>
+
+        <div class="highlight-box">
+            <h2>DISTRIBUTION SCHEDULE</h2>
+            <p>• First round distribution: <strong>Processing now</strong></p>
+            <p>• Second session mini game: <strong>Coming soon</strong></p>
+            <p>• Exchange listing: <strong>Announcement pending</strong></p>
+        </div>
+
+        <!-- Bottom Ad Banner -->
+        <div class="ad-banner">
+            <div id="adstera-bottom-banner"></div>
+        </div>
+
+        <h2>TOKEN INFORMATION</h2>
+        <div class="token-info">
+            <div><strong>Contract Address:</strong> <span class="contract-address">0x3D1C903c950D077701C1FA74CF42A1aEC4d8eEC4</span></div>
+            <div><strong>Blockchain:</strong> <span>BNB Smart Chain (BEP-20)</span></div>
+            <div><strong>Decimal:</strong> <span>4</span></div>
+            <div><strong>Symbol:</strong> <span>CROWN</span></div>
+        </div>
+
+        <div class="warning">
+            ⚠️ IMPORTANT: Only interact through official channels. Never share your private key!
+        </div>
+
+        <h2>OFFICIAL CHANNELS</h2>
+        <div class="social-links">
+            <a href="https://t.me/metacrown_coin" target="_blank">📢 Telegram</a>
+            <a href="https://x.com/meta_crowns" target="_blank">🐦 Twitter/X</a>
+            <a href="https://youtube.com/@metacrowns" target="_blank">▶️ YouTube</a>
+            <a href="https://www.themetacrown.com/" target="_blank">🌐 Official Website</a>
+        </div>
+    </div>
+
+    <script>
+        // Countdown animation
+        const countdown = document.getElementById('countdown');
+        const messages = [
+            "⏰ HURRY! FIRST ROUND ENDING SOON",
+            "🔥 LIMITED TOKENS AVAILABLE",
+            "🚀 SECOND SESSION & LISTING COMING SOON"
+        ];
+        let current = 0;
+        setInterval(() => {
+            countdown.textContent = messages[current];
+            current = (current + 1) % messages.length;
+        }, 3000);
+
+        // Adstera Ad Implementation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize top banner ad
+            new AdsteraAd({
+                container: 'adstera-top-banner',
+                type: 'banner',
+                width: 728,
+                height: 90,
+                key: 'your-adstera-key-here' // Replace with your actual Adstera key
+            });
+            
+            // Initialize middle banner ad
+            new AdsteraAd({
+                container: 'adstera-middle-banner',
+                type: 'banner',
+                width: 468,
+                height: 60,
+                key: 'your-adstera-key-here' // Replace with your actual Adstera key
+            });
+            
+            // Initialize bottom banner ad
+            new AdsteraAd({
+                container: 'adstera-bottom-banner',
+                type: 'banner',
+                width: 728,
+                height: 90,
+                key: 'your-adstera-key-here' // Replace with your actual Adstera key
+            });
+        });
+    </script>
+</body>
+</html>
